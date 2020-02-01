@@ -1,0 +1,15 @@
+pl\edu\wszib\repository\IProductRepository.class
+pl\edu\wszib\service\ProductService.class
+pl\edu\wszib\service\impl\ShoppingCartServiceImpl.class
+pl\edu\wszib\model\Product.class
+pl\edu\wszib\config\WebSecurityConfig.class
+pl\edu\wszib\controller\ProductController.class
+pl\edu\wszib\controller\RegisterController.class
+pl\edu\wszib\controller\ShoppingCartController.class
+pl\edu\wszib\model\User.class
+pl\edu\wszib\repository\InMemoryRepository.class
+pl\edu\wszib\App.class
+pl\edu\wszib\service\impl\ProductServiceImpl.class
+pl\edu\wszib\config\MainConfig.class
+pl\edu\wszib\service\ShoppingCartService.class
+pl\edu\wszib\repository\ProductRepository.class

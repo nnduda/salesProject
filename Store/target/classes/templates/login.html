@@ -1,0 +1,71 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Logowanie</title>-->
+<!--    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+<!--    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<!--    &lt;!&ndash;&#45;&#45;&#45;&#45; Include the above in your HEAD tag &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+<!--    &lt;!&ndash; All the files that are required &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<!--    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form th:action="@{/login}" method="POST" class="form-signin">-->
+<!--        <h3 class="form-signin-heading" th:text="_"></h3>-->
+<!--        <br/>-->
+
+<!--        <input type="text" id="username" name="username" th:placeholder="login"-->
+<!--               class="form-control"/> <br/>-->
+<!--        <input type="password" th:placeholder="hasło"-->
+<!--               id="password" name="password" class="form-control"/> <br/>-->
+<!--        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"-->
+<!--                th:text="Zaloguj"></button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Logowanie</h5>
+                    <div class="form-label-group">
+                        <form th:action="@{/login}" method="POST" class="form-signin">
+                            <h3 class="form-signin-heading" th:text="_"></h3>
+                            <br/>
+
+                            <input type="text" id="username" name="username" th:placeholder="login"
+                                   class="form-control"/> <br/>
+                            <input type="password" th:placeholder="hasło"
+                                   id="password" name="password" class="form-control"/> <br/>
+                            <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"
+                                    th:text="Zaloguj"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+</body>
+</html>
